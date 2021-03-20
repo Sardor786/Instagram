@@ -1,0 +1,17 @@
+.header {
+  background-color: #fff;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .container {
+  overflow: hidden;
+}
+
+.instagram-logo {
+  margin: 0;
+  margin-left: -3px;
+  font-family: "Billabong";
+  letter-spacing: 1px;
+  font-weight: normal;
+}

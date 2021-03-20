@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Billabong";
+  src: url("../fonts/Billabong.woff2") format("woff2"),
+    url("../fonts//Billabong.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 0 !important;
+}
