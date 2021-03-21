@@ -1,54 +1,50 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/header/header.css";
+import nav from "./icons";
 
 const Header = () => {
-  const nav = [
-    {
-      link: "/",
-      icon_active: "./assets/icons/home-active.png",
-      icon_no_active: "./assets/icons/home-no-active.png",
-      alt: "home icon",
-    },
-    {
-      link: "/explore",
-      icon_active: "./assets/icons/compass-active.png",
-      icon_no_active: "./assets/icons/compass-no-active.png",
-      alt: "explore icon",
-    },
-    // {
-    //   link: "/likes",
-    //   icon_active: "./assets/icons/heart-active.png",
-    //   icon_no_active: "./assets/icons/heart-no-active.png",
-    //   alt: "like icon",
-    // },
-    {
-      link: "/profile",
-      icon_active: "./assets/icons/profile-active.png",
-      icon_no_active: "./assets/icons/profile-no-active.png",
-      alt: "profile icon",
-    },
-  ];
+  const [likes, setLikes] = useState(false);
 
   return (
     <div className="header">
-      <div className="container">
-        <div className="d-flex align-items-center">
-          <h2 className="instagram-logo">Instagram</h2>
-          <input className="mx-auto" type="text" placeholder="search" />
+      <div className="container h-100">
+        <div className="header-nav-wrapper h-100">
+          <div className="instagram-logo">
+            <img
+              className="h-100"
+              src="./assets/images/Instagram_logo.png"
+              alt="instagram icon"
+              width="103"
+              height="29"
+              alt="instagram icon"
+            />
+          </div>
+          <input
+            className="mx-auto form-control w-auto px-1"
+            style={{ height: "30px", textAlign: "center" }}
+            type="text"
+            placeholder="Search"
+          />
           {nav.map((n) => (
-            <div className="mx-2">
-              <Link to={n.link}>
-                <img
-                  src={
-                    n.link === window.location.pathname
-                      ? n.icon_active
-                      : n.icon_no_active
-                  }
-                  alt={n.alt}
-                  width="25"
-                  height="25"
-                />
-              </Link>
+            <div className="nav-icons">
+              {n.link !== "/likes" ? (
+                <Link to={n.link}>
+                  {n.link === window.location.pathname
+                    ? likes
+                      ? n.icon_no_active
+                      : n.icon_active
+                    : n.icon_no_active}
+                </Link>
+              ) : (
+                <button
+                  onBlur={() => setLikes(false)}
+                  style={{ border: "none", background: "none" }}
+                  onClick={() => setLikes(!likes)}
+                >
+                  {likes ? n.icon_active : n.icon_no_active}
+                </button>
+              )}
             </div>
           ))}
         </div>

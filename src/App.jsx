@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Explore from "./components/Explore";
 import Profile from "./components/Profile";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Direct from "./components/Direct";
 
 function App() {
   return (
@@ -12,6 +13,11 @@ function App() {
         <Route path="/" exact>
           <Header />
           <Home />
+        </Route>
+
+        <Route path="/direct" exact>
+          <Header />
+          <Direct />
         </Route>
 
         <Route path="/explore" exact>

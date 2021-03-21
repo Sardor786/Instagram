@@ -1,17 +1,40 @@
 .header {
   background-color: #fff;
-  padding: 5px 0;
   border-bottom: 1px solid #ccc;
+  height: 54px;
 }
 
 .header .container {
   overflow: hidden;
 }
 
+.header-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .instagram-logo {
-  margin: 0;
-  margin-left: -3px;
-  font-family: "Billabong";
-  letter-spacing: 1px;
-  font-weight: normal;
+  width: 109px;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-logo img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-nav-wrapper input {
+  font-size: 14px;
+  width: 215px !important;
+}
+
+.nav-icons {
+  margin-right: 20px;
+}
+
+.nav-icons:last-child {
+  margin-right: 0;
 }
