@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/header/header.css";
-import nav from "./icons";
+import nav from "./nav";
 
 const Header = () => {
   const [likes, setLikes] = useState(false);
@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="container h-100">
         <div className="header-nav-wrapper h-100">
-          <div className="instagram-logo">
+          <Link to="/" className="instagram-logo">
             <img
               className="h-100"
               src="./assets/images/Instagram_logo.png"
@@ -18,7 +18,7 @@ const Header = () => {
               height="29"
               alt="instagram icon"
             />
-          </div>
+          </Link>
           <input
             className="mx-auto form-control w-auto px-1"
             style={{ height: "30px", textAlign: "center" }}
@@ -38,7 +38,12 @@ const Header = () => {
               ) : (
                 <button
                   onBlur={() => setLikes(false)}
-                  style={{ border: "none", background: "none" }}
+                  style={{
+                    padding: "0",
+                    border: "none",
+                    background: "none",
+                    cursor: "pointer",
+                  }}
                   onClick={() => setLikes(!likes)}
                 >
                   {likes ? n.icon_active : n.icon_no_active}

@@ -1,8 +1,10 @@
+import Loading from "../details/loading";
+
 const Explore = () => {
   return (
     <div className="Explore">
       <div className="container">
-        <h1 className="m-0 p-0">Explore</h1>
+        <Loading />
       </div>
     </div>
   );
