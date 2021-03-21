@@ -1,14 +1,11 @@
 .header {
+  height: 54px;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-  height: 54px;
-}
-
-.header .container {
-  overflow: hidden;
 }
 
 .header-nav-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,9 +29,41 @@
 }
 
 .nav-icons {
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.nav-icons:last-child {
-  margin-right: 0;
+.nav-icons a,
+button {
+  display: inline-block;
+  margin-right: 20px !important;
+}
+
+.nav-icons a:last-child {
+  margin-right: 0 !important;
+}
+
+.likes-modal {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 99999;
+}
+
+.likes-modal::before {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -23px;
+  right: 40px;
+  border-top: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+  content: "";
 }

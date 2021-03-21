@@ -1,4 +1,4 @@
-export default function Loading() {
+const Loading = () => {
   return (
     <div className="d-flex align-items-center justify-content-center flex-column">
       <img
@@ -18,4 +18,6 @@ export default function Loading() {
       </h1>
     </div>
   );
-}
+};
+
+export default Loading

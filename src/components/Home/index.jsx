@@ -1,10 +1,10 @@
-import Loading from "../details/loading";
+import LoadingSpinner from "../details/loading2";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="container">
-        <Loading />
+        <LoadingSpinner/>
       </div>
     </div>
   );

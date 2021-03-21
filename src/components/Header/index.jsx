@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/header/header.css";
 import nav from "./nav";
+import Loading from "../details/loading";
 
 const Header = () => {
   const [likes, setLikes] = useState(false);
@@ -25,9 +26,9 @@ const Header = () => {
             type="text"
             placeholder="Search"
           />
-          {nav.map((n) => (
-            <div className="nav-icons">
-              {n.link !== "/likes" ? (
+          <div className="nav-icons">
+            {nav.map((n) =>
+              n.link !== "/likes" ? (
                 <Link to={n.link}>
                   {n.link === window.location.pathname
                     ? likes
@@ -48,9 +49,14 @@ const Header = () => {
                 >
                   {likes ? n.icon_active : n.icon_no_active}
                 </button>
-              )}
+              )
+            )}
+          </div>
+          {likes ? (
+            <div className="likes-modal d-flex align-items-center justify-content-center p-3">
+              <Loading />
             </div>
-          ))}
+          ) : null}
         </div>
       </div>
     </div>
