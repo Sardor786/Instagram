@@ -14,7 +14,6 @@ const Header = () => {
             <img
               className="h-100"
               src="./assets/images/Instagram_logo.png"
-              alt="instagram icon"
               width="103"
               height="29"
               alt="instagram icon"

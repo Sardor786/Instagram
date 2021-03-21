@@ -69,6 +69,7 @@ const nav = [
           src="https://placehold.it/20/20"
           width="20"
           height="20"
+          alt="profile icon"
         />
       </div>
     ),
@@ -83,6 +84,7 @@ const nav = [
           src="https://placehold.it/24/24"
           width="24"
           height="24"
+          alt="profile icon"
         />
       </div>
     ),
