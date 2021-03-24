@@ -1,4 +1,5 @@
 @import "header/header.css";
+@import "home/home.css";
 @import "details/loading.css";
 
 @font-face {
@@ -18,10 +19,11 @@
 
 html {
   box-sizing: inherit;
+  scrollbar-color: #ccc #eee;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 1px;
 }
 
 body {

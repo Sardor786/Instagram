@@ -1,10 +1,14 @@
-import LoadingSpinner from "../details/loading2";
+import Stories from "./Stories";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="container">
-        <LoadingSpinner/>
+        <div className="row home-wrapper">
+          <div className="col-8">
+            <Stories />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,44 @@
+.home-wrapper {
+  padding-top: 30px;
+}
+
+.stories-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 16px 0;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  scrollbar-width: 1px;
+}
+
+.story-wrapper {
+  width: 70px;
+  margin: 0 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid red;
+  padding: 2px;
+}
+
+.story-username {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  text-overflow: ellipsis;
+}
