@@ -1,3 +1,6 @@
+@import "header/header.css";
+@import "details/loading.css";
+
 @font-face {
   font-family: "Billabong";
   src: url("../fonts/Billabong.woff2") format("woff2"),

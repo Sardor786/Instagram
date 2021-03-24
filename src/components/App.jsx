@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Explore from "./components/Explore";
-import Profile from "./components/Profile";
+import Header from "./Header";
+import Home from "./Home";
+import Explore from "./Explore";
+import Profile from "./Profile";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Direct from "./components/Direct";
+import Direct from "./Direct";
 
 function App() {
   return (

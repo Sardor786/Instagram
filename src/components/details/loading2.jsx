@@ -1,5 +1,3 @@
-import "../css/loading.css";
-
 const LoadingSpinner = () => {
   return (
     <div className="loading2">

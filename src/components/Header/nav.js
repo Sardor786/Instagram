@@ -57,18 +57,18 @@ const nav = [
       <div
         className="rounded-circle overflow-hidden"
         style={{
-          width: "24px",
-          height: "24px",
+          width: "28px",
+          height: "28px",
           border: "1px solid black",
           padding: "1px",
         }}
       >
         <img
           className="d-block w-100"
-          style={{ objectFit: "column", borderRadius: "50%" }}
-          src="https://placehold.it/20/20"
-          width="20"
-          height="20"
+          style={{ objectFit: "cover", borderRadius: "50%" }}
+          src="https://placehold.it/24/24"
+          width="24"
+          height="24"
           alt="profile icon"
         />
       </div>
@@ -76,11 +76,16 @@ const nav = [
     icon_no_active: (
       <div
         className="rounded-circle overflow-hidden"
-        style={{ width: "24px", height: "24px" }}
+        style={{
+          width: "28px",
+          height: "28px",
+          padding: "1px",
+          border: "1px solid transparent",
+        }}
       >
         <img
           className="d-block w-100"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", borderRadius: "50%" }}
           src="https://placehold.it/24/24"
           width="24"
           height="24"
