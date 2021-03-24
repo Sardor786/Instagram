@@ -4,8 +4,8 @@ const Loading = () => {
       <img
         src="./assets/gifs/thinking.gif"
         alt="thinking gif"
-        width="150"
-        height="150"
+        width="100"
+        height="100"
       />
       <h1
         style={{

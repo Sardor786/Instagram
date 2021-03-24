@@ -1,7 +1,7 @@
 const LoadingSpinner = () => {
   return (
     <div className="loading2">
-      <svg aria-label="Loading..." className=" By4nA" viewBox="0 0 100 100">
+      <svg aria-label="loading" viewBox="0 0 100 100">
         <rect
           fill="#555555"
           height="6"

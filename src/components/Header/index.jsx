@@ -28,7 +28,7 @@ const Header = () => {
           <div className="nav-icons">
             {nav.map((n) =>
               n.link !== "/likes" ? (
-                <Link to={n.link}>
+                <Link to={n.link} key={n.id}>
                   {n.link === window.location.pathname
                     ? likes
                       ? n.icon_no_active
@@ -37,6 +37,7 @@ const Header = () => {
                 </Link>
               ) : (
                 <button
+                  key={n.id}
                   onBlur={() => setLikes(false)}
                   style={{
                     padding: "0",

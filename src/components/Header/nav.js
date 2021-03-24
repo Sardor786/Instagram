@@ -1,5 +1,6 @@
 const nav = [
   {
+    id: 1,
     link: "/",
     icon_active: (
       <svg aria-label="home" viewBox="0 0 48 48" width="22" height="22">
@@ -13,6 +14,7 @@ const nav = [
     ),
   },
   {
+    id: 2,
     link: "/direct",
     icon_active: (
       <svg aria-label="direct" viewBox="0 0 48 48" width="22" height="22">
@@ -26,6 +28,7 @@ const nav = [
     ),
   },
   {
+    id: 3,
     link: "/explore",
     icon_active: (
       <svg aria-label="Find People" viewBox="0 0 48 48" width="22" height="22">
@@ -39,6 +42,7 @@ const nav = [
     ),
   },
   {
+    id: 4,
     link: "/likes",
     icon_active: (
       <svg aria-label="Likes" viewBox="0 0 48 48" width="22" height="22">
@@ -52,6 +56,7 @@ const nav = [
     ),
   },
   {
+    id: 5,
     link: "/profile",
     icon_active: (
       <div
