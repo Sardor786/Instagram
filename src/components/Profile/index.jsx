@@ -2,7 +2,7 @@ import Loading from '../details/loading'
 
 const Profile = () => {
   return (
-    <div className="Profile">
+    <div className="Profile mt-5">
       <div className="container">
         <Loading/>
       </div>

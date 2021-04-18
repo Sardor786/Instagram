@@ -4,7 +4,7 @@ export default function PostHeader() {
       <div className="d-flex align-items-center">
         <img
           className="rounded-circle"
-          src="https://picsum.photos/35/35"
+          src="http://placehold.it/35x35"
           width="35"
           height="35"
           alt="user_image"

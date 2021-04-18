@@ -11,7 +11,7 @@ export default function Post() {
       <hr className="m-0 p-0" />
       <div className="overflow-hidden">
         <img
-          src="https://picsum.photos/614/1000"
+          src="http://placehold.it/614x1000"
           width="614"
           height="1000"
           alt="user_post"

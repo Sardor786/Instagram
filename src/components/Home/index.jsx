@@ -2,7 +2,7 @@ import Post from "./Post";
 import Stories from "./Stories";
 
 const Home = () => {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const arr = [1, 2];
   return (
     <div className="home">
       <div className="container">

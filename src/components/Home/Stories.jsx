@@ -12,7 +12,7 @@ function Stories() {
           <div className="image-wrapper">
             <img
               className="rounded-circle bg-white"
-              src={`https://picsum.photos/56/56?random=${s}`}
+              src={`http://placehold.it/56x56`}
               alt="storie img"
               width="56"
               height="56"
