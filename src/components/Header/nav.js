@@ -71,7 +71,7 @@ const nav = [
         <img
           className="d-block w-100"
           style={{ objectFit: "cover", borderRadius: "50%" }}
-          src="https://placehold.it/24/24"
+          src="https://picsum.photos/24/24"
           width="24"
           height="24"
           alt="profile icon"
@@ -91,7 +91,7 @@ const nav = [
         <img
           className="d-block w-100"
           style={{ objectFit: "cover", borderRadius: "50%" }}
-          src="https://placehold.it/24/24"
+          src="https://picsum.photos/24/24"
           width="24"
           height="24"
           alt="profile icon"
