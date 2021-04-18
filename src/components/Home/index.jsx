@@ -8,7 +8,7 @@ const Home = () => {
   setTimeout(() => {
     setLoading(false);
   }, 5000);
-  
+
   const arr = [1];
 
   return (
@@ -17,7 +17,9 @@ const Home = () => {
         <div className="row home-wrapper">
           <div className="col-8">
             <Stories />
-            {arr.map((i) => (loading ? <PostSkleton /> : <Post key={i} />))}
+            {arr.map((i) =>
+              loading ? <PostSkleton key={i} /> : <Post key={i} />
+            )}
           </div>
         </div>
       </div>
