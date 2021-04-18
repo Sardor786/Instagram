@@ -59,3 +59,7 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.home .react-loading-skeleton {
+  line-height: 2 !important;
+}
