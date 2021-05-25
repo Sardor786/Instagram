@@ -1,74 +1,74 @@
 .header {
-  height: 54px;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+	height: 54px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
 }
 
 .header-nav-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .instagram-logo {
-  width: 109px;
-  display: flex;
-  align-items: center;
+	width: 109px;
+	display: flex;
+	align-items: center;
 }
 
 .instagram-logo img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+	display: block;
+	width: 100%;
+	object-fit: cover;
 }
 
 .header-nav-wrapper input {
-  font-size: 14px;
-  width: 215px !important;
+	font-size: 14px;
+	width: 215px !important;
 }
 
 .nav-icons {
-  height: 100%;
-  display: flex;
-  align-items: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .nav-icons a,
 button {
-  display: inline-block;
-  margin-right: 20px !important;
+	display: inline-block;
+	margin-right: 20px !important;
 }
 
 .nav-icons a:last-child {
-  margin-right: 0 !important;
+	margin-right: 0 !important;
 }
 
 .likes-modal {
-  position: absolute;
-  top: 55px;
-  right: 0;
-  width: 400px;
-  background: #fff;
-  box-shadow: 0 0 5px #ccc;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  z-index: 99999;
+	position: absolute;
+	top: 55px;
+	right: 0;
+	width: 400px;
+	background: #fff;
+	box-shadow: 0 0 5px #ccc;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	z-index: 99999;
 }
 
 .likes-modal::before {
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: -10px;
-  right: 40px;
-  background: #fff;
-  box-shadow: -3px -3px 3px #ccc;
-  content: "";
-  transform: rotate(45deg);
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: -10px;
+	right: 40px;
+	background: #fff;
+	box-shadow: -3px -3px 3px #ccc;
+	content: "";
+	transform: rotate(45deg);
 }

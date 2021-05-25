@@ -1,45 +1,45 @@
 .home-wrapper {
-  padding-top: 30px;
-  margin-top: 54px;
+	padding-top: 30px;
+	margin-top: 54px;
 }
 
 .stories-wrapper {
-  width: 100%;
-  display: flex;
-  padding: 16px 0;
-  overflow-x: auto;
+	width: 100%;
+	display: flex;
+	padding: 16px 0;
+	overflow-x: auto;
 }
 
 .story-wrapper {
-  width: 70px;
-  margin: 0 3px;
-  display: flex;
-  flex-direction: column;
+	width: 70px;
+	margin: 0 3px;
+	display: flex;
+	flex-direction: column;
 }
 
 .image-wrapper {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.5px solid red;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid red;
 }
 
 .image-wrapper img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+	display: block;
+	width: 100%;
+	object-fit: cover;
 }
 
 .story-username {
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0;
-  text-overflow: ellipsis;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+	text-overflow: ellipsis;
 }
 
 /* /////////////////////////// */
@@ -47,19 +47,19 @@
 /* /////////////////////////// */
 
 .post_footer .post_icons {
-  padding-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 .post_footer .post_icons div {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .post_footer .count_likes_views {
-  padding-top: 10px !important;
-  font-size: 14px;
-  font-weight: bold;
+	padding-top: 10px !important;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .home .react-loading-skeleton {
-  line-height: 2 !important;
+	line-height: 2 !important;
 }

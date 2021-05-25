@@ -8,31 +8,31 @@ import Profile from "../components/Profile";
 import Direct from "../components/Direct";
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path={`${process.env.PUBLIC_URL}/`} exact>
-          <Header />
-          <Home />
-        </Route>
+	return (
+		<Router>
+			<Switch>
+				<Route path={`${process.env.PUBLIC_URL}/`} exact>
+					<Header />
+					<Home />
+				</Route>
 
-        <Route path={`${process.env.PUBLIC_URL}/direct`} exact>
-          <Header />
-          <Direct />
-        </Route>
+				<Route path={`${process.env.PUBLIC_URL}/direct`} exact>
+					<Header />
+					<Direct />
+				</Route>
 
-        <Route path={`${process.env.PUBLIC_URL}/explore`} exact>
-          <Header />
-          <Explore />
-        </Route>
+				<Route path={`${process.env.PUBLIC_URL}/explore`} exact>
+					<Header />
+					<Explore />
+				</Route>
 
-        <Route path={`${process.env.PUBLIC_URL}/profile`} exact>
-          <Header />
-          <Profile />
-        </Route>
-      </Switch>
-    </Router>
-  );
+				<Route path={`${process.env.PUBLIC_URL}/profile`} exact>
+					<Header />
+					<Profile />
+				</Route>
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
